@@ -11,9 +11,10 @@ public class Main {
         String b = scanner.nextLine();
 
         int n = Integer.parseInt(b);
-        if(a.equals("Friday") || a.equals("Monday") && n >=18 && n<=20) {
+        if((a.equals("Friday") || a.equals("Monday")) && (n >=18 && n<=20)) {
             System.out.println("Lesson is running. You are late! Hurry up!");
+        } else {
+            System.out.println("Lesson is not running.");
         }
-        else System.out.println("Lesson is not running.");
     }
 }
